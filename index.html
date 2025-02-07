@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Xtreme 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/lucide-icons" rel="stylesheet">
+    <style>
+        .info-card a {
+            color: #FFD700; /* Bright Gold for visibility */
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .info-card a:hover {
+            text-decoration: underline;
+        }
+        .hero-content h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #FFD700;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .event-card .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .event-card .buttons button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FFD700;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .event-card .buttons button:hover {
+            background-color: #ffcc00;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .hero img {
+            width: 60%; /* Medium size */
+            max-height: 300px; /* Adjust height */
+            object-fit: contain; /* Ensures the image fits well */
+            margin: 20px auto; /* Center the image */
+            display: block; /* Ensures margin auto works */
+        }
+        .event-details img {
+            margin-top: 20px;
+        }
+        .about-tharang {
+            padding: 40px 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+        }
+        .about-tharang h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+        .about-tharang p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        .about-tharang .motto {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #FFD700;
+            margin: 20px 0;
+        }
+        .partners {
+            margin-top: 30px;
+        }
+        .partners h3 {
+            font-size: 2rem;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+        .partners p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <img src="WhatsApp_Image_2025-02-06_at_21.48.36_7561c854-removebg-preview.png" alt="THARANG 2K25 Banner">
+                <h2>INSTITUTE OF HUMAN RESOURCES DEVELOPMENT PRESENTS</h2>
+                <h1>TECH XTREME 2025</h1>
+                <p class="tagline">AI and Gaming Nexus</p>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i data-lucide="calendar" class="icon"></i>
+                        <p>February 10, 2025</p>
+                    </div>
+                    <div class="info-card">
+                        <i data-lucide="map-pin" class="icon"></i>
+                        <p><a href="https://maps.app.goo.gl/geF7pt1i9nB2vLLd8" target="_blank">IHRD Varadium</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i data-lucide="users" class="icon"></i>
+                        <p>5000+ Participants</p>
+                    </div>
+                </div>
+                <button class="register-btn" onclick="scrollToFeaturedEvents()">
+                    Register Now
+                    <i data-lucide="chevron-right" class="btn-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Events Section -->
+        <section class="events" id="featured-events">
+            <h2>Featured Events</h2>
+            <div class="event-grid">
+                <!-- Gaming Tournament -->
+                <div class="event-card">
+                    <i data-lucide="gamepad" class="event-icon"></i>
+                    <h3>GAMING TOURNAMENT</h3>
+                    <p>FREE FIRE HIGH SCHOOL GAMING TOURNAMENT</p>
+                    <p class="prize">Prize Pool: Cash Prize & Certificates</p>
+                    <div class="buttons">
+                        <button onclick="window.open('Free_Fire_Tournament_Brochure.pdf', '_blank')">
+                            Rules & Regulations
+                        </button>
+                        <button onclick="window.location.href='https://forms.gle/uSF5TibYuVD4f7pU6'">
+                            Register
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Treasure Hunt -->
+                <div class="event-card">
+                    <i data-lucide="treasure-map" class="event-icon"></i>
+                    <h3>TREASURE HUNT</h3>
+                    <p>Solve clues, find hidden treasures, and win exciting prizes!</p>
+                    <p class="prize">Prize Pool: Cash Prize & Certificates</p>
+                    <div class="buttons">
+                        <button onclick="window.location.href='https://forms.gle/A1LXQveanQ8yZ6zLA'">
+                            Register
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BrainBot Winners -->
+                <div class="event-card">
+                    <i data-lucide="cpu" class="event-icon"></i>
+                    <h3>BrainBot Winners</h3>
+                    <p>A class on AI and hardware that includes hands-on learning and innovation. AI quiz winners will receive certificates.</p>
+                    <p class="prize">Prize Pool: Certificates</p>
+                    <div class="buttons">
+                    </div>
+                </div>
+
+                <!-- Project Expo -->
+                <div class="event-card">
+                    <i data-lucide="lightbulb" class="event-icon"></i>
+                    <h3>Project Expo</h3>
+                    <p>Showcase your innovations</p>
+                    <p class="prize">Prize Pool: Cash Prize & Certificates</p>
+                    <div class="buttons">
+                        <button onclick="window.location.href='https://forms.gle/Th173LtiyMohKVqt8'">
+                            Register
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Event Details Image -->
+            <div class="event-details">
+                <img src="WhatsApp Image 2025-02-06 at 21.46.33_b2803bff.jpg" alt="Event Details">
+            </div>
+        </section>
+
+        <!-- About Tharang 2K25 Section -->
+        <section class="about-tharang">
+            <h2>About Tharang 2K25</h2>
+            <p>
+             IHRD Tharang -2K25, the Third National Level Techno-Cultural-Entrepreneurial event organized by the Institute of Human Resources Development (IHRD), will be held at K K M M P T C Kallettumkara on February 22nd and 23rd, 2025. 
+            </p>
+            <p>
+                This fest will revolve around Artificial Intelligence (AI), emphasizing the responsible use of AI in our daily lives, art and literature, education, industries, and much more.
+            </p>
+            <p class="motto">
+                ❝AI: Re-designing your lifestyle.❞
+            </p>
+            <div class="partners">
+                <h3>Our Partners</h3>
+                <p>
+                    We are extremely happy to collaborate with our partners who have made our dream of bringing Tharang 2K25 to you a reality.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Tech Xtreme 2025</h3>
+                    <p>The Ultimate Tech Festival</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/thssvaradium?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                        <i data-lucide="instagram" class="social-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        // Smooth scroll to Featured Events section
+        function scrollToFeaturedEvents() {
+            const featuredEventsSection = document.getElementById('featured-events');
+            if (featuredEventsSection) {
+                featuredEventsSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
